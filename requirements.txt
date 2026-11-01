@@ -1,0 +1,14 @@
+# Tested with Python 3.10.13 and torch 2.4.0+cu121 (CUDA 12.1).
+# For a CPU-only or different-CUDA build, install the matching torch wheel from
+# https://pytorch.org first, then install the rest.
+#
+# torch_geometric provides ChebConv, used by the C encoder. The optional
+# torch_scatter / torch_sparse extensions are NOT required: PyG 2.8 ships its own
+# implementations. See https://pytorch-geometric.readthedocs.io for wheels
+# matching your torch/CUDA build.
+torch==2.4.0
+torch_geometric==2.8.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
